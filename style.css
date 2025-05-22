@@ -68,11 +68,11 @@ a:hover {
   color: #fff;
 }
 
-.header img {
-  width: 256px;
+#header img {
+  width: 323px;
 }
 
-.header {
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,6 +114,15 @@ a:hover {
   color: #fff;
 }
 
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
 #product-1 {
   text-align: center;
   padding: 40px 80px;
@@ -144,15 +153,16 @@ a:hover {
 }
 
 #product-1 .pro {
-  width: 512px;
-  height: 512px;
+  width: 50%;
+  min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #aaa;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  transition: 0.2s ease-in-out;
-  margin-bottom: 10px;
+  transition: 0.2s ease;
+  margin: 15px 0;
+  position: relative;
 }
 
 #product-1 .pro:hover {
@@ -208,14 +218,16 @@ a:hover {
   margin-top: 1px;
 }
 
-.cart, .star {
+.cart,
+.star {
   position: relative;
   margin-top: 5px;
   float: left;
   margin-left: 5px;
 }
 
-.cart-icon, .star-icon {
+.cart-icon,
+.star-icon {
   font-size: 16px;
   color: #fff;
 }
@@ -326,4 +338,89 @@ footer a {
   color: #465B52;
   padding-right: 4px;
   cursor: pointer;
+}
+
+@media (max-width: 799px) {
+  #navbar {
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300;
+    height: 100vh;
+    width: 300px;
+    background-color: #17164d;
+    box-shadow: 0 40px 60px rgba(255, 255, 255, 0.06);
+    padding: 80px 0 0 10px;
+    transition: 0.3s ease;
+  }
+
+  #navbar.active {
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+  }
+
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #AAA;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 1px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+  }
+
+  #product-1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
+
+  footer {
+    text-align: start;
+  }
 }
