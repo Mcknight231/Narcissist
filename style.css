@@ -340,6 +340,22 @@ footer a {
   cursor: pointer;
 }
 
+#page-header {
+  background-image: url(img/banners/header.png);
+  width: 50%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: top;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2, #page-header p {
+  color: #ffffff;
+}
+
 @media (max-width: 799px) {
   #navbar {
     opacity: 0;
@@ -384,6 +400,19 @@ footer a {
     color: #AAA;
     font-size: 24px;
   }
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #622acc;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: 600;
 }
 
 @media (max-width: 477px) {
