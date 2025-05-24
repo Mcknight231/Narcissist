@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/NARCISSIST-ICON.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>THE NARCISSIST</title>
+</head>
+
+<body>
+    <section id="header">
+        <img src="img/NARCISSIST-LOGO_transparent.png" alt="Narcissist Logo" />
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">H0ME</a></li>
+                <li><a class="active" href="shop.html">SH0P</a></li>
+                <li><a href="blog.html">BL0G</a></li>
+                <li><a href="about.html">AB0UT</a></li>
+                <li><a href="contact.html">C0NTACT</a></li>
+                <li>
+                    <a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i>
+            <i id="bar" class="fas fa-outdent"></i>
+    </section>
+
+    <section class="container">
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="https://shop.playboicarti.com/cdn/shop/files/VIEW_CARTI_ECOM_2025_MUSIC_LS5_FRONT_NEW.png?v=1742102572&width=800"
+                    width="100%" id="mainImg" alt="Merch">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="https://shop.playboicarti.com/cdn/shop/files/VIEW_CARTI_ECOM_2025_MUSIC_LS5_BACK_NEW.png?v=1742102572&width=800"
+                            width="100%" class="small-img" alt="Merch">
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h6>H0ME/SHIRTS</h6>
+                <h4>I AM CARTI BOMBER</h4>
+                <h2>$50</h2>
+                <select>
+                    <option>SIZE</option>
+                    <option>MEDIUM</option>
+                    <option>LARGE</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">ADD 2 CART</button>
+                <h4>PRODUCT DETAILS</h4>
+                <span>Heavyweight long sleeve shirt. Made from premium, durable fabric. Featuring a vertical "PBC" logo
+                    on
+                    the front with a bold "Swamp Tire" disc graphic on the back.</span>
+            </div>
+        </section>
+
+        <section id="product-1" class="product-1">
+            <h2>Featured Products</h2>
+            <p>Playboi Carti - I AM MUSIC Collection</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img
+                        src="https://shop.playboicarti.com/cdn/shop/files/VIEW_CARTI_ECOM_2025_MUSIC_LS5_FRONT_NEW.png?v=1742102572&width=800" />
+                </div>
+                <div class="des">
+                    <span>Playboi Carti</span>
+                    <h5>I AM SWAMP BOMBER</h5>
+                    <h4>$50</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="pro">
+                    <img
+                        src="https://shop.playboicarti.com/cdn/shop/files/product_pbc_iamtee_black.png?v=1742259322&width=800" />
+                </div>
+                <div class="des">
+                    <span>Playboi Carti</span>
+                    <h5>I AM MUSIC T SHIRT BLACK</h5>
+                    <h4>$30</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="pro">
+                    <img
+                        src="https://shop.playboicarti.com/cdn/shop/files/PRODUCT_CARTI_ECOM_2025_MUSIC_TANK3.png?v=1742102444&width=800" />
+                </div>
+                <div class="des">
+                    <span>Playboi Carti</span>
+                    <h5>I AM TANK</h5>
+                    <h4>$35</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="pro">
+                    <img
+                        src="https://shop.playboicarti.com/cdn/shop/files/E9C54AB0-A00D-4702-B1DC-89D28A45D011.png?v=1742102292&width=800" />
+                </div>
+                <div class="des">
+                    <span>Playboi Carti</span>
+                    <h5>I AM T SHIRT</h5>
+                    <h4>$30</h4>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="star">
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var MainImg = document.getElementById('MainImg');
+            var smallimg = document.getElementsByClassName('small-img');
+
+            if (smallimg.length > 0) {
+                smallimg[0].onclick = function () {
+                    MainImg.src = smallimg[0].src;
+                }
+            }
+
+            if (smallimg.length > 1) {
+                smallimg[1].onclick = function () {
+                    MainImg.src = smallimg[1].src;
+                }
+            }
+        </script>
+
+        <div id="newsletter" class="section-p1">
+            <div id="newstext">
+                <h4>Sign Up For Newsletter</h4><br>
+                <p>Get email updates for new arrivals, <span>special offers</span> & more!</p><br>
+            </div>
+
+            <div id="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up!</button>
+            </div>
+        </div>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img src="img/NARCISSIST-LOGO_transparent.png" alt="Logo">
+                <h4>C0NTACT</h4>
+                <p><strong>Adress:</strong> 28 May Station, newar 28 mall & LC Waikiki</p>
+                <p><strong>Phone:</strong> +994 50 555 55 55</p>
+                <p><strong>Hours:</strong> 9:00 AM - 7:00 PM</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i><br>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>My account</h4>
+                    <a href="#">Sign In</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="#">Track My 0rder</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
